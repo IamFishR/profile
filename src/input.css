@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-item {
+    @apply text-sm transition-colors duration-300 px-4 py-2 rounded-md hover:text-gray-dark-200 focus:outline-none capitalize;
+  }
+
+  .container {
+    @apply max-w-full md:max-w-5xl lg:max-w-6xl mx-auto;
+  }
+
+  /* 2 column above 1024 & 1 column below */
+  .column-2 {
+    @apply flex gap-4 items-center justify-between;
+  }
+
+  .column-2.reverse {
+    @apply flex-col-reverse md:flex-col;
+    /* @apply grid grid-cols-1 md:grid-cols-2 gap-4; */
+  }
+
+  .card {
+    @apply dark:bg-gray-dark-700 rounded-md shadow-md p-4 dark:text-gray-dark-400 transition-all duration-300;
+  }
+
+  .card-btn {
+    @apply px-4 py-2 dark:hover:bg-gray-dark-600;
+  }
+
+  .divider.horizontal {
+    @apply h-px my-14;
+    background: linear-gradient(90deg, rgba(32, 43, 56, 0.44) 0%, rgba(42, 58, 78, 0.94) 49.97%, rgba(31, 44, 60, 0.48) 100%);
+  }
+
+  .divider.vertical {
+    @apply mx-2 hidden md:flex w-px;
+    background: linear-gradient(0deg, rgba(32, 43, 56, 0.44) 0%, rgba(42, 58, 78, 0.94) 49.97%, rgba(31, 44, 60, 0.48) 100%);
+  }
+
+  .card-divider.vertical {
+    @apply mx-1 w-px bg-secondary h-16;
+  }
+
+  .spacing {
+    @apply mb-16;
+  }
+}
