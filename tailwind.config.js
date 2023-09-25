@@ -18,7 +18,13 @@ module.exports = {
       },
       fontSize: {
         'extra-small': '.65rem',
-      }
+      },
+      gridTemplateColumns: {
+        'projects': '148px 10px 148px 10px 148px',
+      },
+      gridTemplateRows: {
+        'projects': '20px 228px 10px 228px 20px',
+      },
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],

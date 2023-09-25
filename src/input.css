@@ -11,6 +11,10 @@
     @apply max-w-full md:max-w-5xl lg:max-w-6xl mx-auto;
   }
 
+  .link {
+    @apply dark:text-gray-dark-400 dark:hover:text-gray-dark-100 dark:hover:underline-offset-1 duration-500;
+  }
+
   /* 2 column above 1024 & 1 column below */
   .column-2 {
     @apply flex gap-4 items-center justify-between;
@@ -68,4 +72,45 @@
     background-repeat: repeat;
     background-size: 100% 13px;
   }
+
+  .projects {
+    @apply md:w-[500px] grid grid-cols-projects grid-rows-projects gap-0;
+  }
+
+  .projects>div.card {
+    @apply flex flex-col justify-between;
+  }
+
+  .projects>div:nth-child(1) {
+    @apply col-start-1 col-end-6 row-start-1 row-end-2;
+  }
+
+  .projects>div:nth-child(3) {
+    @apply col-start-2 col-end-3 row-start-1 row-end-5;
+  }
+
+  .projects>div:nth-child(5) {
+    @apply col-start-4 col-end-5 row-start-1 row-end-5;
+  }
+
+  .projects>div:nth-child(7) {
+    @apply col-start-1 col-end-6 row-start-3 row-end-4;
+  }
+
+  .projects>div:nth-child(11) {
+    @apply col-start-1 col-end-6 row-start-5 row-end-6;
+  }
+
+  .project-divider.horizontal {
+    @apply border-t border-b;
+  }
+
+  .project-divider.vertical {
+    @apply border-l border-r;
+  }
+
+  .project-divider {
+    @apply border-gray-dark-400;
+  }
+
 }
