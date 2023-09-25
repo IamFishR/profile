@@ -40,10 +40,32 @@
   }
 
   .card-divider.vertical {
-    @apply mx-1 w-px bg-secondary h-16;
+    @apply w-px bg-secondary h-16;
   }
 
   .spacing {
     @apply mb-16;
+  }
+
+  .timeline {
+    @apply relative flex flex-col gap-4 pl-5 py-5;
+  }
+
+  .timeline-item {
+    @apply mb-10 relative;
+  }
+
+  .timeline-item::before {
+    @apply absolute top-1 -left-[23px] w-2 h-2 bg-gray-dark-400 rounded-full;
+    content: '';
+  }
+
+  .timeline::before {
+    @apply absolute top-0 left-0 w-px h-full bg-gradient-to-b from-gray-dark-400 to-gray-dark-900;
+    content: '';
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #525B67 50%, #191D24 50%);
+    background-repeat: repeat;
+    background-size: 100% 13px;
   }
 }
