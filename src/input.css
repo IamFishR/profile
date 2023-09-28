@@ -113,4 +113,15 @@
     @apply border-gray-dark-400;
   }
 
+  .footer-card-info {
+    @apply absolute rotate-90 bottom-16 right-4;
+  }
+
+  .footer-card-info::after {
+    @apply absolute top-0 left-0 w-full h-full bg-gradient-to-b from-gray-dark-400 from-50% to-gray-dark-900 to-50% bg-repeat;
+    content: '';
+    background-color: transparent;
+    background-size: 100% 13px;
+  }
+
 }
