@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400;500;600;700&display=swap"
+        rel="stylesheet">
     <link href="../output/output.css" rel="stylesheet">
 </head>
 
-<body class="dark:bg-gray-dark-900 dark:text-gray-dark-400 font-normal text-sm">
-    <header class="spacing">
+<body class=" font-normal">
+    <header>
         <nav>
             <div class="container">
                 <div class="flex justify-between md:items-center flex-row flex-wrap py-3">
@@ -33,12 +34,12 @@
         </nav>
     </header>
 
-    <div class="min-h-screen spacing flex justify-center items-center flex-col">
+    <div class="landing-section">
         <div class="container">
             <div class="column-2">
                 <div class="md:w-[438px] flex flex-col items-start">
                     <p>Namaste! I'm</p>
-                    <p class="mb-4 text-4xl dark:text-gray-dark-100">Rakesh Jadhav</p>
+                    <h2 class="mb-4 text-4xl xl:text-5xl font-light dark:text-gray-dark-100">Rakesh Jadhav</h2>
                     <p class="mb-2 mt-4">
                         an <span class="dark:text-gray-dark-200">UI developer</span> from the vibrant landscapes of
                         India. With 5 years of web development experience under my belt, I'm your
@@ -80,7 +81,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card flex flex-col md:flex-row gap-8">
+                        <div class="card flex flex-col md:flex-row gap-12">
                             <div class="flex flex-col justify-between">
                                 <img src="./images/twitter.svg" class="w-5">
                                 <div>
@@ -93,7 +94,7 @@
                                 <a href="https://twitter.com/after_myth" target="_blank"
                                     class="text-xs underline">twitter.com/after_myth</a>
 
-                                <span class="text-extra-small block leading-tight mt-4">
+                                <span class="text-xs block leading-tight mt-4">
                                     Experienced UI Dev | Payments, Healthcare & Lending | JS, CSS, React | Passion for
                                     UX | WordPress & Emerging Tech
                                     Enthusiast | Ready to Craft Digital Delight
@@ -120,7 +121,6 @@
                 </div>
             </div>
         </div>
-        <div class="divider container horizontal"></div>
     </div>
 
     <div class="bg-gray-dark-600 py-14">
@@ -129,7 +129,7 @@
                 <h5 class="mb-5">Hands-On Skills</h5>
 
                 <div class="cards-container">
-                    <div class="card py-7 flex justify-between items-center">
+                    <div class="card card-btn py-7 flex justify-between items-center">
                         <div class="w-24 flex flex-col justify-center items-center">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1"
                                 viewBox="0 0 32 32" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +137,7 @@
                                     d="M9.633 7.968h3.751v10.514c0 4.738-2.271 6.392-5.899 6.392-0.888 0-2.024-0.148-2.764-0.395l0.42-3.036c0.518 0.173 1.185 0.296 1.925 0.296 1.58 0 2.567-0.716 2.567-3.282v-10.489zM16.641 20.753c0.987 0.518 2.567 1.037 4.171 1.037 1.728 0 2.641-0.716 2.641-1.826 0-1.012-0.79-1.629-2.789-2.32-2.764-0.987-4.59-2.517-4.59-4.961 0-2.838 2.394-4.985 6.293-4.985 1.9 0 3.258 0.37 4.245 0.839l-0.839 3.011c-0.642-0.321-1.851-0.79-3.455-0.79-1.629 0-2.419 0.765-2.419 1.604 0 1.061 0.913 1.53 3.085 2.369 2.937 1.086 4.294 2.616 4.294 4.985 0 2.789-2.122 5.158-6.688 5.158-1.9 0-3.776-0.518-4.714-1.037l0.765-3.085z">
                                 </path>
                             </svg>
-                            <p class="mb-0 mt-4 font-semibold text-lg">JavaScript</p>
+                            <p class="mb-0 mt-4 font-medium text-lg dark:text-gray-dark-200">JavaScript</p>
                             <!-- <span class="text-xs">5 years</span> -->
                         </div>
                         <div class="card-divider vertical mx-5"></div>
@@ -150,7 +150,7 @@
                             </ol>
                         </div>
                     </div>
-                    <div class="card my-5 py-7 flex justify-between items-center">
+                    <div class="card card-btn my-5 py-7 flex justify-between items-center">
                         <div class="w-24 flex flex-col justify-center items-center">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
                                 height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -158,7 +158,7 @@
                                     d="M4.192 3.143h15.615l-1.42 16.034-6.404 1.812-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.603-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137.905-9.923z">
                                 </path>
                             </svg>
-                            <p class="mb-0 mt-4 font-semibold text-lg">CSS</p>
+                            <p class="mb-0 mt-4 font-medium text-lg dark:text-gray-dark-200">CSS</p>
                             <!-- <span class="text-xs">5 years</span> -->
                         </div>
                         <div class="card-divider vertical mx-5"></div>
@@ -171,7 +171,7 @@
                             </ol>
                         </div>
                     </div>
-                    <div class="card py-7 flex justify-between items-center">
+                    <div class="card card-btn py-7 flex justify-between items-center">
                         <div class="w-24 flex flex-col justify-center items-center">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1"
                                 viewBox="0 0 32 32" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
@@ -179,16 +179,16 @@
                                     d="M9.633 7.968h3.751v10.514c0 4.738-2.271 6.392-5.899 6.392-0.888 0-2.024-0.148-2.764-0.395l0.42-3.036c0.518 0.173 1.185 0.296 1.925 0.296 1.58 0 2.567-0.716 2.567-3.282v-10.489zM16.641 20.753c0.987 0.518 2.567 1.037 4.171 1.037 1.728 0 2.641-0.716 2.641-1.826 0-1.012-0.79-1.629-2.789-2.32-2.764-0.987-4.59-2.517-4.59-4.961 0-2.838 2.394-4.985 6.293-4.985 1.9 0 3.258 0.37 4.245 0.839l-0.839 3.011c-0.642-0.321-1.851-0.79-3.455-0.79-1.629 0-2.419 0.765-2.419 1.604 0 1.061 0.913 1.53 3.085 2.369 2.937 1.086 4.294 2.616 4.294 4.985 0 2.789-2.122 5.158-6.688 5.158-1.9 0-3.776-0.518-4.714-1.037l0.765-3.085z">
                                 </path>
                             </svg>
-                            <p class="mb-0 mt-4 font-semibold text-lg">JavaScript</p>
+                            <p class="mb-0 mt-4 font-medium text-lg dark:text-gray-dark-200">HTML</p>
                             <!-- <span class="text-xs">5 years</span> -->
                         </div>
                         <div class="card-divider vertical mx-5"></div>
                         <div class="w-[203px]">
                             <ol class="text-xs leading-snug">
-                                <li>OOP concepts, classes, objects.</li>
-                                <li>IIFE for encapsulation.</li>
-                                <li>Promises and async/await.</li>
-                                <li>ES6 features like arrow functions.</li>
+                                <li>Semantic HTML markup.</li>
+                                <li>HTML5 elements.</li>
+                                <li>Responsive and accessible design.</li>
+                                <li>Form handling and validation.</li>
                             </ol>
                         </div>
                     </div>
@@ -196,32 +196,35 @@
                 </div>
             </div>
             <div class="divider vertical"></div>
-            <div class="md:w-[534px] flex flex-col justify-center items-center">
+            <div class="md:w-[534px] flex flex-col justify-between items-center">
                 <div class="multiple-skills">
-                    <p class="text-lg mb-5">I believe in always learning new stuff to make better websites.</p>
+                    <p class="text-lg mb-5 dark:text-gray-dark-200">I believe in always learning new stuff to make
+                        better websites.</p>
 
-                    <p class="mb-3">Besides my main skills, I know how to use JavaScript frameworks like <span
-                            class="text-gray-dark-200">jQuery, React</span> and
-                        <span class="text-gray-dark-200">Node</span>
-                    </p>
-                    <p class="mb-3">I'm comfortable with WordPress, creating user-friendly websites. When it comes to
-                        adding features
-                        and
-                        making websites
-                        special, PHP is my choice. I've also dabbled in Zend Framework and have a strong grasp of the
-                        model-view-controller
-                        software design pattern.</p>
-                    <p class="mb-3">I'm well-versed in CSS, the styling magic for websites. I can work wonders with CSS
-                        frameworks
-                        like
-                        Tailwind CSS,
-                        Bootstrap, I have the ability to craft custom styles that make websites look unique and amazing
-                    </p>
+                    <div class="text-sm">
+                        <p class="mb-3">Besides my main skills, I know how to use JavaScript frameworks like
+                            <span class="dark:text-gray-dark-200">jQuery, React</span> and
+                            <span class="dark:text-gray-dark-200">Node</span>
+                        </p>
+                        <p class="mb-3">I'm comfortable with <span class="dark:text-gray-dark-200">WordPress</span>, creating
+                            user-friendly websites. When it comes
+                            to adding features and making websites special,
+                            <span class="dark:text-gray-dark-200">PHP</span> is my choice. I've also dabbled in
+                            <span class="dark:text-gray-dark-200">Zend Framework </span> and have a strong grasp of
+                            the model-view-controller software design pattern.
+                        </p>
+                        <p class="mb-3">I'm well-versed in CSS, the styling magic for websites. I can work wonders with
+                            CSS frameworks like
+                            <span class="dark:text-gray-dark-200">Tailwind CSS</span>,
+                            <span class="dark:text-gray-dark-200">Bootstrap</span>, I have the ability to craft custom styles
+                            that make websites look unique and amazing.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="can-pickup-fast">
-                    <p class="text-lg mb-5">"Tech-Savvy and Quick Learner"</p>
-                    <p class="mb-3">
+                    <p class="text-lg mb-5 dark:text-gray-dark-200">"Tech-Savvy and Quick Learner"</p>
+                    <p class="mb-3 text-sm">
                         I'm not just a web developer; I'm always learning. I'm good at picking up new technologies fast.
                         Whether it's diving
                         into the latest frameworks or embracing emerging trends, I have a knack for quick adaptation.
@@ -241,20 +244,20 @@
                     <div class="timeline-item">
                         <p class="mb-4">2018</p>
                         <p class="text-gray-dark-200 mb-0">Software Engineer | Team Lead</p>
-                        <p class="mb-3">KUNCHAM Software Solutions Pvt Ltd · Full-time</p>
-                        <p class="mb-0">May 2018 - Aug 2019 · 1 yr 4 mos</p>
-                        <p>Hyderabad, Telangana</p>
+                        <p class="mb-3 text-xs">KUNCHAM Software Solutions Pvt Ltd · Full-time</p>
+                        <p class="mb-0 text-xs">May 2018 - Aug 2019 · 1 yr 4 mos</p>
+                        <p class="text-xs">Hyderabad, Telangana</p>
                     </div>
                     <div class="timeline-item">
                         <p class="mb-4">2020 - Oct . 2023</p>
                         <p class="text-gray-dark-200 mb-0">UI Developer</p>
-                        <p class="mb-3">Liquid Payments (India), Pvt Ltd. · Full-time</p>
-                        <p class="mb-0">Jan 2020 - Present · 3 yrs 9 mos</p>
-                        <p>Hyderabad, Telangana</p>
+                        <p class="mb-3 text-xs">Liquid Payments (India), Pvt Ltd. · Full-time</p>
+                        <p class="mb-0 text-xs">Jan 2020 - Present · 3 yrs 9 mos</p>
+                        <p class="text-xs">Hyderabad, Telangana</p>
                     </div>
                     <div class="timeline-item">
                         <p class="mb-4">Oct . 2023</p>
-                        <p class="mb-3">Search in progress</p>
+                        <p class="mb-3 text-xs">Search in progress</p>
                     </div>
                 </div>
             </div>
@@ -435,30 +438,32 @@
         <div class="container column-2 py-14">
             <h2 class="text-6xl">CONTACT ME</h2>
             <div class="relative">
-                <div class="md:w-[322px] card dark:bg-gray-dark-600 px-9 pt-14 shadow-lg">
+                <div class="md:w-[322px] card dark:bg-gray-dark-600 px-9 pt-14 shadow-md shadow-dark">
                     <div class="mb-6">
-                        <span class="block mb-2 text-extra-small">My Name</span>
-                        <p>Rakesh B. Jadhav</p>
+                        <span class="block mb-2 text-xs">My Name</span>
+                        <p class="dark:text-gray-dark-200">Rakesh B. Jadhav</p>
                     </div>
                     <div class="mb-6">
-                        <span class="block mb-2 text-extra-small">Email Address</span>
-                        <a href="mailto:thisisganesh353@gmail.com">thisisganesh353@gmail.com</a>
+                        <span class="block mb-2 text-xs">Email Address</span>
+                        <a class="dark:text-gray-dark-200"
+                            href="mailto:thisisganesh353@gmail.com">thisisganesh353@gmail.com</a>
                     </div>
                     <div class="mb-11">
-                        <span class="block mb-2 text-extra-small">Phone Number</span>
-                        <a href="phone:9908279938">
+                        <span class="block mb-2 text-xs">Phone Number</span>
+                        <a class="dark:text-gray-dark-200" href="phone:9908279938">
                             <span class="underline-offset-1">+91</span>
                             9908279938
                         </a>
                     </div>
                     <div class="flex items-center mb-28">
-                        <a href="https://linkedin.com/in/thisisfish" target="_blank" class="card card-btn mr-3">linkedin</a>
+                        <a href="https://linkedin.com/in/thisisfish" target="_blank"
+                            class="card card-btn mr-3">linkedin</a>
                         <a href="https://twitter.com/after_myth" target="_blank" class="card card-btn">twitter</a>
                     </div>
                 </div>
 
                 <p class="footer-card-info">connect</p>
-            </div> 
+            </div>
         </div>
     </footer>
 
