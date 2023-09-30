@@ -568,7 +568,9 @@ video {
   }
 }
 
-html, body {
+html,
+  body {
+  scroll-behavior: smooth;
   font-family: Poppins, sans-serif;
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -576,7 +578,8 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-:is(.dark html),:is(.dark  body) {
+:is(.dark html),:is(.dark 
+  body) {
   --tw-bg-opacity: 1;
   background-color: rgb(33 37 41 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -584,7 +587,8 @@ html, body {
 }
 
 @media (min-width: 1280px) {
-  html, body {
+  html,
+  body {
     font-size: 15px;
   }
 }
@@ -675,24 +679,37 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 60px);
 }
 
-.landing-section::after {
+.h-view {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  min-height: 600px;
+}
+
+.landing-section::after,
+  .h-view::after {
   position: absolute;
   left: 0px;
   right: 0px;
-  bottom: 1.25rem;
+  bottom: 5%;
   height: 1px;
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: #212529 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(33 37 41 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: rgb(139 148 158 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #8b949e var(--tw-gradient-via-position), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(44 48 52 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #2C3034 var(--tw-gradient-via-position), var(--tw-gradient-to);
   --tw-gradient-to: #212529 var(--tw-gradient-to-position);
-  background-repeat: repeat;
   content: '';
+  background: linear-gradient(90deg,
+        rgba(32, 43, 56, 0.44) 0%,
+        rgba(42, 58, 78, 0.94) 49.97%,
+        rgba(31, 44, 60, 0.48) 100%);
 }
 
 .card {
@@ -786,8 +803,8 @@ html, body {
 
 .timeline-item::before {
   position: absolute;
-  top: 0.25rem;
-  left: -23px;
+  top: 0.5rem;
+  left: -21.5px;
   height: 0.5rem;
   width: 0.5rem;
   border-radius: 9999px;
@@ -806,11 +823,11 @@ html, body {
   --tw-gradient-from: #8b949e var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(139 148 158 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-from-position: 50%;
   --tw-gradient-to: #212529 var(--tw-gradient-to-position);
-  content: '';
-  background-color: transparent;
-  background-image: linear-gradient(to bottom, #525B67 50%, #191D24 50%);
+  --tw-gradient-to-position: 50%;
   background-repeat: repeat;
+  content: '';
   background-size: 100% 13px;
 }
 
@@ -1088,20 +1105,12 @@ html, body {
   justify-content: space-evenly;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-9 {
-  gap: 2.25rem;
-}
-
 .gap-12 {
   gap: 3rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .rounded-full {
@@ -1121,11 +1130,6 @@ html, body {
 .px-9 {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
-}
-
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
 }
 
 .py-3 {
@@ -1156,11 +1160,6 @@ html, body {
   line-height: 1;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1178,10 +1177,6 @@ html, body {
 
 .font-light {
   font-weight: 300;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .font-normal {
@@ -1249,18 +1244,13 @@ html, body {
   color: rgb(201 209 217 / var(--tw-text-opacity));
 }
 
-:is(.dark .dark\:text-gray-200) {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
-}
-
 @media (min-width: 768px) {
   .md\:hidden {
     display: none;
   }
 
-  .md\:h-\[500px\] {
-    height: 500px;
+  .md\:h-\[300px\] {
+    height: 300px;
   }
 
   .md\:w-\[322px\] {

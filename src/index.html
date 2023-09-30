@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300,400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="../output/output.css" rel="stylesheet">
 </head>
 
@@ -17,7 +16,10 @@
             <div class="container">
                 <div class="flex justify-between md:items-center flex-row flex-wrap py-3">
                     <div>
-                        <img src="./images/logo.svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="74" height="16" fill="none">
+                            <path fill="#C9D1D9"
+                                d="M.41 15V.25h5.12c1.353 0 2.383.32 3.09.96.707.64 1.06 1.617 1.06 2.93 0 .787-.15 1.457-.45 2.01-.293.547-.65.97-1.07 1.27-.413.3-.797.47-1.15.51.36.027.713.127 1.06.3.353.167.647.427.88.78.233.353.35.827.35 1.42v3.36c0 .287.023.543.07.77.047.22.1.367.16.44H7.81a1.903 1.903 0 0 1-.14-.45 3.599 3.599 0 0 1-.07-.76V10.64c0-.653-.207-1.14-.62-1.46-.413-.32-.997-.48-1.75-.48H1.6l.48-.65V15H.41Zm1.67-7.09L1.6 7.2h3.65c.493 0 .94-.12 1.34-.36.407-.247.73-.587.97-1.02.247-.44.37-.953.37-1.54 0-.913-.24-1.563-.72-1.95s-1.173-.58-2.08-.58H1.56l.52-.74v6.9ZM11.675 15 15.735.21h2.66L22.425 15h-1.76l-3.61-13.68h.02L13.434 15h-1.76Zm2.1-3.91v-1.5h6.58v1.5h-6.58Zm14.358-3.56.04-1.32 5.9 8.79h-1.93l-5.04-7.46.88.11-2 2.62.18-1.11V15h-1.71V.25h1.71v8.11l-.34-.36 6.02-7.75h1.87l-5.58 7.28Zm8.998-5.78.77-.97v6.66l-.42-.59h5.66v1.5h-5.66l.42-.59v6.71l-.77-.97h7.12V15h-8.06V.25h8.06v1.5h-7.12Zm14.4 13.45c-1.02 0-1.894-.16-2.62-.48a3.607 3.607 0 0 1-1.66-1.47c-.387-.653-.58-1.467-.58-2.44v-.68h1.71v.65c0 1.02.266 1.757.8 2.21.533.447 1.31.67 2.33.67 1.052 0 1.85-.18 2.39-.54.54-.36.81-.943.81-1.75 0-.567-.157-1.037-.47-1.41-.307-.38-.734-.7-1.28-.96a12.906 12.906 0 0 0-1.91-.73 10.05 10.05 0 0 1-2.2-.96c-.64-.387-1.148-.863-1.52-1.43-.367-.573-.55-1.27-.55-2.09 0-.8.193-1.477.58-2.03.393-.553.94-.973 1.64-1.26.7-.287 1.513-.43 2.44-.43.98 0 1.83.153 2.55.46.726.3 1.286.76 1.68 1.38.4.613.6 1.387.6 2.32v.75h-1.71V4.3c0-.973-.264-1.663-.79-2.07-.528-.413-1.294-.62-2.3-.62-.967 0-1.714.17-2.24.51-.528.34-.79.897-.79 1.67 0 .58.16 1.06.48 1.44.326.373.77.693 1.33.96.56.26 1.2.51 1.92.75.873.287 1.623.613 2.25.98.633.36 1.116.81 1.45 1.35.34.54.51 1.22.51 2.04 0 .82-.197 1.52-.59 2.1-.387.58-.944 1.023-1.67 1.33-.72.307-1.584.46-2.59.46ZM68.817.25V15h-1.71V7.54l.77.85h-8.13l.77-.85V15h-1.71V.25h1.71v7.54l-.77-.9h8.13l-.77.9V.25h1.71Zm3.983 15.01c-.327 0-.604-.11-.83-.33a1.147 1.147 0 0 1-.33-.83c0-.32.11-.593.33-.82.226-.227.503-.34.83-.34.32 0 .593.113.82.34.226.227.34.5.34.82 0 .327-.114.603-.34.83-.227.22-.5.33-.82.33Z" />
+                        </svg>
                     </div>
                     <img src="https://cdn.glitch.global/68a8c99d-34ba-4333-95e7-a3703e621611/menu.svg?v=1692729037890"
                         class="block md:hidden cursor-pointer w-6 menu-icon">
@@ -25,7 +27,7 @@
                         <a href="#intro" class="nav-item">intro</a>
                         <a href="#skills" class="nav-item">skills</a>
                         <a href="#projects" class="nav-item">projects</a>
-                        <a href="#blog" class="nav-item">blog</a>
+                        <!-- <a href="#blog" class="nav-item">blog</a> -->
                         <a href="#resume" class="nav-item">resume</a>
                         <a href="#contact" class="nav-item">contact</a>
                     </div>
@@ -34,7 +36,7 @@
         </nav>
     </header>
 
-    <div class="landing-section">
+    <div id="intro" class="landing-section h-view">
         <div class="container">
             <div class="column-2">
                 <div class="md:w-[438px] flex flex-col items-start">
@@ -123,8 +125,8 @@
         </div>
     </div>
 
-    <div class="bg-gray-dark-600 py-14">
-        <div class="container column-2 items-stretch h-full">
+    <div id="skills" class="bg-gray-dark-600 h-view">
+        <div class="container column-2 items-stretch">
             <div>
                 <h5 class="mb-5">Hands-On Skills</h5>
 
@@ -137,7 +139,7 @@
                                     d="M9.633 7.968h3.751v10.514c0 4.738-2.271 6.392-5.899 6.392-0.888 0-2.024-0.148-2.764-0.395l0.42-3.036c0.518 0.173 1.185 0.296 1.925 0.296 1.58 0 2.567-0.716 2.567-3.282v-10.489zM16.641 20.753c0.987 0.518 2.567 1.037 4.171 1.037 1.728 0 2.641-0.716 2.641-1.826 0-1.012-0.79-1.629-2.789-2.32-2.764-0.987-4.59-2.517-4.59-4.961 0-2.838 2.394-4.985 6.293-4.985 1.9 0 3.258 0.37 4.245 0.839l-0.839 3.011c-0.642-0.321-1.851-0.79-3.455-0.79-1.629 0-2.419 0.765-2.419 1.604 0 1.061 0.913 1.53 3.085 2.369 2.937 1.086 4.294 2.616 4.294 4.985 0 2.789-2.122 5.158-6.688 5.158-1.9 0-3.776-0.518-4.714-1.037l0.765-3.085z">
                                 </path>
                             </svg>
-                            <p class="mb-0 mt-4 font-medium text-lg dark:text-gray-dark-200">JavaScript</p>
+                            <p class="mb-0 mt-4 dark:text-gray-dark-200">JavaScript</p>
                             <!-- <span class="text-xs">5 years</span> -->
                         </div>
                         <div class="card-divider vertical mx-5"></div>
@@ -158,7 +160,7 @@
                                     d="M4.192 3.143h15.615l-1.42 16.034-6.404 1.812-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.603-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137.905-9.923z">
                                 </path>
                             </svg>
-                            <p class="mb-0 mt-4 font-medium text-lg dark:text-gray-dark-200">CSS</p>
+                            <p class="mb-0 mt-4 dark:text-gray-dark-200">CSS</p>
                             <!-- <span class="text-xs">5 years</span> -->
                         </div>
                         <div class="card-divider vertical mx-5"></div>
@@ -179,7 +181,7 @@
                                     d="M9.633 7.968h3.751v10.514c0 4.738-2.271 6.392-5.899 6.392-0.888 0-2.024-0.148-2.764-0.395l0.42-3.036c0.518 0.173 1.185 0.296 1.925 0.296 1.58 0 2.567-0.716 2.567-3.282v-10.489zM16.641 20.753c0.987 0.518 2.567 1.037 4.171 1.037 1.728 0 2.641-0.716 2.641-1.826 0-1.012-0.79-1.629-2.789-2.32-2.764-0.987-4.59-2.517-4.59-4.961 0-2.838 2.394-4.985 6.293-4.985 1.9 0 3.258 0.37 4.245 0.839l-0.839 3.011c-0.642-0.321-1.851-0.79-3.455-0.79-1.629 0-2.419 0.765-2.419 1.604 0 1.061 0.913 1.53 3.085 2.369 2.937 1.086 4.294 2.616 4.294 4.985 0 2.789-2.122 5.158-6.688 5.158-1.9 0-3.776-0.518-4.714-1.037l0.765-3.085z">
                                 </path>
                             </svg>
-                            <p class="mb-0 mt-4 font-medium text-lg dark:text-gray-dark-200">HTML</p>
+                            <p class="mb-0 mt-4 dark:text-gray-dark-200">HTML</p>
                             <!-- <span class="text-xs">5 years</span> -->
                         </div>
                         <div class="card-divider vertical mx-5"></div>
@@ -206,7 +208,8 @@
                             <span class="dark:text-gray-dark-200">jQuery, React</span> and
                             <span class="dark:text-gray-dark-200">Node</span>
                         </p>
-                        <p class="mb-3">I'm comfortable with <span class="dark:text-gray-dark-200">WordPress</span>, creating
+                        <p class="mb-3">I'm comfortable with <span class="dark:text-gray-dark-200">WordPress</span>,
+                            creating
                             user-friendly websites. When it comes
                             to adding features and making websites special,
                             <span class="dark:text-gray-dark-200">PHP</span> is my choice. I've also dabbled in
@@ -216,7 +219,8 @@
                         <p class="mb-3">I'm well-versed in CSS, the styling magic for websites. I can work wonders with
                             CSS frameworks like
                             <span class="dark:text-gray-dark-200">Tailwind CSS</span>,
-                            <span class="dark:text-gray-dark-200">Bootstrap</span>, I have the ability to craft custom styles
+                            <span class="dark:text-gray-dark-200">Bootstrap</span>, I have the ability to craft custom
+                            styles
                             that make websites look unique and amazing.
                         </p>
                     </div>
@@ -236,7 +240,7 @@
         </div>
     </div>
 
-    <div class="py-14">
+    <div id="projects" class="h-view">
         <div class="container column-2 items-start">
             <div>
                 <h5 class="mb-5">Professional Work Experience</h5>
@@ -268,7 +272,7 @@
                     <div class="card">
                         <p class="text-slate-50">01.</p>
                         <div>
-                            <p class="text-base mb-5">A Ticket<br />Dashboard Kit</p>
+                            <p class="text-sm mb-5">A Ticket<br />Dashboard Kit</p>
                             <div class="flex flex-row items-center">
                                 <a href="#" class="mr-3 link" rel="noopener noreferrer">
                                     <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
@@ -297,7 +301,7 @@
                     <div class="card">
                         <p class="text-slate-50">02.</p>
                         <div>
-                            <p class="text-base mb-5">Animative<br />Sidebar</p>
+                            <p class="text-sm mb-5">Animative<br />Sidebar</p>
                             <div class="flex flex-row items-center">
                                 <a href="#" class="mr-3 link" rel="noopener noreferrer">
                                     <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
@@ -326,7 +330,7 @@
                     <div class="card">
                         <p class="text-slate-50">03.</p>
                         <div>
-                            <p class="text-base mb-5">Virtual<br />healthcare for you</p>
+                            <p class="text-sm mb-5">Virtual<br />healthcare for you</p>
                             <div class="flex flex-row items-center">
                                 <a href="#" class="mr-3 link" rel="noopener noreferrer">
                                     <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
@@ -355,7 +359,7 @@
                     <div class="card">
                         <p class="text-slate-50">04.</p>
                         <div>
-                            <p class="text-base mb-5">LaslesVPN <br />Landing Page</p>
+                            <p class="text-sm mb-5">LaslesVPN <br />Landing Page</p>
                             <div class="flex flex-row items-center">
                                 <a href="#" class="mr-3 link" rel="noopener noreferrer">
                                     <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
@@ -383,7 +387,7 @@
                     <div class="card">
                         <p class="text-slate-50">05.</p>
                         <div>
-                            <p class="text-base mb-5">Animative<br />Sidebar</p>
+                            <p class="text-sm mb-5">Animative<br />Sidebar</p>
                             <div class="flex flex-row items-center">
                                 <a href="#" class="mr-3 link" rel="noopener noreferrer">
                                     <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
@@ -419,7 +423,7 @@
         </div>
     </div>
 
-    <div class="md:h-[500px] bg-gray-dark-600 py-14">
+    <div id="resume" class="md:h-[300px] bg-gray-dark-600">
         <div class="container h-full flex justify-center items-center">
             <div class="text-center">
                 <a href="#" class="card card-btn mt-3 px-14" rel="noopener noreferrer">
@@ -434,8 +438,8 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container column-2 py-14">
+    <footer id="contact" class="h-view">
+        <div class="container column-2">
             <h2 class="text-6xl">CONTACT ME</h2>
             <div class="relative">
                 <div class="md:w-[322px] card dark:bg-gray-dark-600 px-9 pt-14 shadow-md shadow-dark">
