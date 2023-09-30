@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <div class="container layout">
+            <div class="container layout py-3">
                 <div class="flex justify-between md:items-center flex-row flex-wrap py-3">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="74" height="16" fill="none">
@@ -41,12 +41,12 @@
     </header>
 
     <div id="intro" class="landing-section h-view">
-        <div class="container">
+        <div class="container layout spacing-y">
             <div class="column-2">
-                <div class="md:w-[438px] flex flex-col items-start">
+                <div class="md:w-[438px] flex flex-col items-center md:items-start">
                     <p>Namaste! I'm</p>
                     <h2 class="mb-4 text-4xl xl:text-5xl font-light dark:text-gray-dark-100">Rakesh Jadhav</h2>
-                    <p class="mb-2 mt-4">
+                    <p class="mb-5 md:mb-2 mt-4 layout-text">
                         an <span class="dark:text-gray-dark-200">UI developer</span> from the vibrant landscapes of
                         India. With 5 years of web development experience under my belt, I'm your
                         go-to person for all things UI. I'm passionate about JavaScript and React, and I'm a
@@ -55,20 +55,31 @@
                         ensuring responsiveness.
                         Let's explore the digital world together!
                     </p>
-                    <a href="#" class="card card-btn mt-3" rel="noopener noreferrer">
+                    <a href="#" class="card card-btn mt-3 layout-text" rel="noopener noreferrer">
                         Let's work together
                     </a>
                 </div>
-                <div class="grow flex justify-end items-center">
+                <div class="grow flex justify-end items-center mt-8 md:mt-0">
                     <div class="md:w-[433px] flex flex-col justify-center gap-4 items-center">
                         <div class="rounded-full w-[110px] h-[110px] card"></div>
 
                         <div class="grid grid-cols-2 gap-4 w-full">
                             <div class="card flex flex-col justify-between items-stretch">
                                 <div class="flex justify-between items-center">
-                                    <img src="./images/linkdin.svg" class="w-5">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.8 0H1.2C0.88174 0 0.576516 0.126428 0.351472 0.351472C0.126428 0.576516 0 0.88174 0 1.2V14.8C0 15.1183 0.126428 15.4235 0.351472 15.6485C0.576516 15.8736 0.88174 16 1.2 16H14.8C15.1183 16 15.4235 15.8736 15.6485 15.6485C15.8736 15.4235 16 15.1183 16 14.8V1.2C16 0.88174 15.8736 0.576516 15.6485 0.351472C15.4235 0.126428 15.1183 0 14.8 0ZM4.8 13.6H2.4V6.4H4.8V13.6ZM3.6 5C3.32495 4.99214 3.05831 4.9034 2.8334 4.74486C2.60849 4.58633 2.43529 4.36503 2.33544 4.10862C2.23558 3.85221 2.2135 3.57206 2.27195 3.30318C2.3304 3.03429 2.4668 2.78859 2.66409 2.59678C2.86138 2.40497 3.11083 2.27555 3.38125 2.22469C3.65168 2.17383 3.93109 2.2038 4.18459 2.31083C4.43808 2.41787 4.65441 2.59724 4.80655 2.82652C4.95869 3.0558 5.03989 3.32483 5.04 3.6C5.03368 3.97628 4.87867 4.33476 4.60884 4.59709C4.33901 4.85943 3.97631 5.00428 3.6 5ZM13.6 13.6H11.2V9.808C11.2 8.672 10.72 8.264 10.096 8.264C9.91305 8.27618 9.73431 8.32439 9.57004 8.40585C9.40577 8.48731 9.25921 8.60042 9.13879 8.73869C9.01836 8.87695 8.92644 9.03765 8.8683 9.21154C8.81016 9.38544 8.78695 9.56911 8.8 9.752C8.79603 9.78923 8.79603 9.82677 8.8 9.864V13.6H6.4V6.4H8.72V7.44C8.95402 7.084 9.27554 6.79406 9.65375 6.59795C10.032 6.40184 10.4542 6.30613 10.88 6.32C12.12 6.32 13.568 7.008 13.568 9.248L13.6 13.6Z"
+                                            fill="#525B67" />
+                                    </svg>
+
                                     <span class="flex items-center">
-                                        <img src="./images/connections.svg" class="mr-1 w-3">
+                                        <svg width="10" class="mr-1" height="11" viewBox="0 0 10 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.71429 2.35714C4.71429 2.82334 4.57604 3.27907 4.31704 3.6667C4.05803 4.05433 3.68989 4.35645 3.25918 4.53486C2.82847 4.71327 2.35453 4.75994 1.89729 4.66899C1.44005 4.57804 1.02004 4.35355 0.690392 4.02389C0.36074 3.69424 0.136244 3.27424 0.0452929 2.817C-0.045658 2.35976 0.00102132 1.88581 0.179428 1.4551C0.357834 1.02439 0.659955 0.656256 1.04759 0.39725C1.43522 0.138244 1.89095 0 2.35714 0C2.9823 0 3.58185 0.248341 4.0239 0.690391C4.46595 1.13244 4.71429 1.73199 4.71429 2.35714ZM2.94643 5.5H1.76786C1.29899 5.5 0.849332 5.68626 0.517794 6.01779C0.186257 6.34933 1.08422e-06 6.79899 1.08422e-06 7.26786V11H4.71429V7.26786C4.71429 6.79899 4.52803 6.34933 4.19649 6.01779C3.86496 5.68626 3.41529 5.5 2.94643 5.5ZM7.85714 5.5V3.92857H7.07143V5.5H5.5V6.28571H7.07143V7.85714H7.85714V6.28571H9.42857V5.5H7.85714Z"
+                                                fill="#525B67" />
+                                        </svg>
                                         <span class="text-xs">700+</span>
                                     </span>
                                 </div>
@@ -79,7 +90,13 @@
                                 </div>
                             </div>
                             <div class="card flex flex-col justify-between">
-                                <img src="./images/github.svg" class="w-5">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.32637 6.96584e-07C3.72603 -0.00185953 0 3.72231 0 8.31893C0 11.9538 2.33086 15.0436 5.57695 16.1784C6.01411 16.2881 5.94714 15.9775 5.94714 15.7654V14.3237C3.42281 14.6195 3.3205 12.949 3.15122 12.67C2.80894 12.0859 1.99974 11.9371 2.24157 11.658C2.81638 11.3623 3.40235 11.7324 4.08133 12.7351C4.57243 13.4624 5.53045 13.3397 6.01597 13.2188C6.122 12.7816 6.34895 12.391 6.66147 12.0877C4.04599 11.619 2.9559 10.0229 2.9559 8.12546C2.9559 7.20465 3.25911 6.35825 3.85439 5.67555C3.4749 4.55011 3.88973 3.58651 3.94554 3.44328C5.02633 3.34654 6.1499 4.21713 6.23733 4.28596C6.85121 4.1204 7.55251 4.03297 8.33753 4.03297C9.12626 4.03297 9.82943 4.12412 10.4489 4.29154C10.6591 4.13156 11.7008 3.38375 12.7053 3.4749C12.7593 3.61814 13.1648 4.55941 12.8076 5.66997C13.4104 6.35453 13.7173 7.20837 13.7173 8.13104C13.7173 10.0322 12.6198 11.6301 9.99685 12.0915C10.2215 12.3124 10.3999 12.5759 10.5216 12.8665C10.6433 13.1572 10.7058 13.4692 10.7056 13.7843V15.877C10.7205 16.0444 10.7056 16.21 10.9846 16.21C14.2791 15.0994 16.6509 11.9873 16.6509 8.32079C16.6509 3.72231 12.923 6.96584e-07 8.32637 6.96584e-07Z"
+                                        fill="#525B67" />
+                                </svg>
+
                                 <div class="mt-4">
                                     <p class="dark:text-gray-400 mb-0 leading-none">IamFishR</p>
                                     <a href="https://github.com/IamFishR" target="_blank"
@@ -87,9 +104,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card flex flex-col md:flex-row gap-12">
+                        <div class="card flex flex-row gap-12">
                             <div class="flex flex-col justify-between">
-                                <img src="./images/twitter.svg" class="w-5">
+                                <svg width="21" height="17" viewBox="0 0 21 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8271 2.00988C20.0612 2.34028 19.2277 2.57806 18.3692 2.67067C19.2605 2.14113 19.928 1.30455 20.2464 0.317886C19.41 0.815446 18.4937 1.16434 17.5382 1.3491C17.1389 0.922166 16.6559 0.582048 16.1193 0.349942C15.5827 0.117837 15.0041 -0.00128097 14.4195 1.03883e-05C12.0542 1.03883e-05 10.152 1.91728 10.152 4.27006C10.152 4.60045 10.192 4.93084 10.2571 5.24871C6.71543 5.06349 3.5567 3.37149 1.45672 0.780933C1.07408 1.43449 0.873566 2.17865 0.876035 2.93598C0.876035 4.41773 1.62942 5.72427 2.77828 6.49268C2.10124 6.46602 1.44006 6.27992 0.848502 5.94954V6.0021C0.848502 8.07705 2.31524 9.79659 4.27004 10.1921C3.90301 10.2874 3.52543 10.3362 3.14622 10.3372C2.86839 10.3372 2.60558 10.3097 2.34026 10.2721C2.8809 11.9641 4.45526 13.1931 6.32998 13.2331C4.86325 14.382 3.02608 15.0578 1.03122 15.0578C0.673296 15.0578 0.342905 15.0453 0 15.0052C1.89224 16.2192 4.13739 16.92 6.55524 16.92C14.4045 16.92 18.6996 10.4173 18.6996 4.77315C18.6996 4.58793 18.6996 4.40271 18.6871 4.21749C19.5181 3.60927 20.2464 2.85588 20.8271 2.00988Z"
+                                        fill="#525B67" />
+                                </svg>
+
                                 <div>
                                     <p class="mt-4">Twitter</p>
                                     <span class="text-xs">@after_myth</span>
@@ -112,7 +135,6 @@
                                 <div class="flex justify-between items-center">
                                     <img src="./images/glitch.png" class="w-5">
                                     <span class="flex items-center">
-                                        <img src="./images/connections.svg" class="mr-1 w-3">
                                         <span class="text-xs">10 Projects</span>
                                     </span>
                                 </div>
@@ -130,15 +152,15 @@
     </div>
 
     <div id="skills" class="bg-gray-dark-600 h-view">
-        <div class="container column-2 items-stretch layout">
+        <div class="container column-2 items-stretch layout spacing-y">
             <div>
-                <h5 class="mb-5">Hands-On Skills</h5>
+                <h5 class="mb-5 layout-text">Hands-On Skills</h5>
 
                 <div class="cards-container">
-                    <div class="card card-btn py-7 flex justify-between items-center">
+                    <div class="card card-btn py-9 md:py-7 flex justify-between items-center">
                         <div class="w-24 flex flex-col justify-center items-center">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1"
-                                viewBox="0 0 32 32" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                viewBox="0 0 32 32" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.633 7.968h3.751v10.514c0 4.738-2.271 6.392-5.899 6.392-0.888 0-2.024-0.148-2.764-0.395l0.42-3.036c0.518 0.173 1.185 0.296 1.925 0.296 1.58 0 2.567-0.716 2.567-3.282v-10.489zM16.641 20.753c0.987 0.518 2.567 1.037 4.171 1.037 1.728 0 2.641-0.716 2.641-1.826 0-1.012-0.79-1.629-2.789-2.32-2.764-0.987-4.59-2.517-4.59-4.961 0-2.838 2.394-4.985 6.293-4.985 1.9 0 3.258 0.37 4.245 0.839l-0.839 3.011c-0.642-0.321-1.851-0.79-3.455-0.79-1.629 0-2.419 0.765-2.419 1.604 0 1.061 0.913 1.53 3.085 2.369 2.937 1.086 4.294 2.616 4.294 4.985 0 2.789-2.122 5.158-6.688 5.158-1.9 0-3.776-0.518-4.714-1.037l0.765-3.085z">
                                 </path>
@@ -156,10 +178,10 @@
                             </ol>
                         </div>
                     </div>
-                    <div class="card card-btn my-5 py-7 flex justify-between items-center">
+                    <div class="card card-btn my-8 md:my-5 py-9 md:py-7 flex justify-between items-center">
                         <div class="w-24 flex flex-col justify-center items-center">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                class="w-6 h-6" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.192 3.143h15.615l-1.42 16.034-6.404 1.812-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.603-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137.905-9.923z">
                                 </path>
@@ -177,10 +199,10 @@
                             </ol>
                         </div>
                     </div>
-                    <div class="card card-btn py-7 flex justify-between items-center">
+                    <div class="card card-btn py-9 md:py-7 flex justify-between items-center">
                         <div class="w-24 flex flex-col justify-center items-center">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1"
-                                viewBox="0 0 32 32" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                viewBox="0 0 32 32" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M9.633 7.968h3.751v10.514c0 4.738-2.271 6.392-5.899 6.392-0.888 0-2.024-0.148-2.764-0.395l0.42-3.036c0.518 0.173 1.185 0.296 1.925 0.296 1.58 0 2.567-0.716 2.567-3.282v-10.489zM16.641 20.753c0.987 0.518 2.567 1.037 4.171 1.037 1.728 0 2.641-0.716 2.641-1.826 0-1.012-0.79-1.629-2.789-2.32-2.764-0.987-4.59-2.517-4.59-4.961 0-2.838 2.394-4.985 6.293-4.985 1.9 0 3.258 0.37 4.245 0.839l-0.839 3.011c-0.642-0.321-1.851-0.79-3.455-0.79-1.629 0-2.419 0.765-2.419 1.604 0 1.061 0.913 1.53 3.085 2.369 2.937 1.086 4.294 2.616 4.294 4.985 0 2.789-2.122 5.158-6.688 5.158-1.9 0-3.776-0.518-4.714-1.037l0.765-3.085z">
                                 </path>
@@ -198,12 +220,11 @@
                             </ol>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="divider vertical"></div>
-            <div class="md:w-[534px] flex flex-col justify-between items-center">
-                <div class="multiple-skills">
+            <div class="md:w-[534px] flex flex-col justify-between items-center layout-text">
+                <div class="multiple-skills mb-11">
                     <p class="text-lg mb-5 dark:text-gray-dark-200">I believe in always learning new stuff to make
                         better websites.</p>
 
@@ -245,9 +266,9 @@
     </div>
 
     <div id="projects" class="h-view">
-        <div class="container column-2 items-start">
-            <div>
-                <h5 class="mb-5">Professional Work Experience</h5>
+        <div class="container column-2 md:items-start layout spacing-y">
+            <div class="mb-11 md:mb-0">
+                <h5 class="mb-5 layout-text">Professional Work Experience</h5>
                 <div class="timeline">
                     <div class="timeline-item">
                         <p class="mb-4">2018</p>
@@ -427,10 +448,10 @@
         </div>
     </div>
 
-    <div id="resume" class="md:h-[300px] bg-gray-dark-600">
+    <div id="resume" class="h-[300px] bg-gray-dark-600">
         <div class="container h-full flex justify-center items-center">
             <div class="text-center">
-                <a href="#" class="card card-btn mt-3 px-14" rel="noopener noreferrer">
+                <a href="#" class="card card-btn mt-3 px-14 block" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none" class="inline-block">
                         <path stroke="#525B67" stroke-linecap="round" stroke-linejoin="round"
                             d="M10 7v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7M3 4.5 5.5 7 8 4.5M5.5 7V1" />
@@ -443,7 +464,7 @@
     </div>
 
     <footer id="contact" class="h-view">
-        <div class="container column-2">
+        <div class="container column-2 layout spacing-y">
             <h2 class="text-6xl">CONTACT ME</h2>
             <div class="relative">
                 <div class="md:w-[322px] card dark:bg-gray-dark-600 px-9 pt-14 shadow-md shadow-dark">
