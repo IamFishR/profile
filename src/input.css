@@ -6,15 +6,23 @@
 
   html,
   body {
-    @apply text-sm xl:text-[15px] leading-6 font-sans antialiased dark:bg-gray-dark-900 dark:text-gray-dark-400 scroll-smooth;
+    @apply text-sm xl:text-[15px] leading-6 font-sans antialiased dark:bg-gray-dark-900 dark:text-gray-dark-400 scroll-smooth overflow-x-hidden;
   }
 
   .nav-item {
     @apply text-sm transition-colors duration-300 px-4 py-2 rounded-md hover:text-gray-dark-200 focus:outline-none capitalize;
   }
 
+  p {
+    @apply text-sm;
+  }
+
   .container {
     @apply max-w-full md:max-w-5xl lg:max-w-6xl mx-auto;
+  }
+  
+  .layout  {
+    @apply px-3 md:px-0 py-3 md:py-0;
   }
 
   .link {
@@ -23,7 +31,7 @@
 
   /* 2 column above 1024 & 1 column below */
   .column-2 {
-    @apply flex gap-4 items-center justify-between;
+    @apply flex gap-4 items-center justify-between flex-col md:flex-row;
   }
 
   .column-2.reverse {
@@ -36,9 +44,7 @@
   }
   
   .h-view {
-    @apply flex justify-center items-center flex-col relative;
-    height: calc(100vh - 60px);
-    min-height: 600px;
+    @apply flex justify-center items-center flex-col relative md:h-screen-view md:min-h-[600px];
   }
 
   .landing-section::after,
@@ -145,6 +151,14 @@
     content: '';
     background-color: transparent;
     background-size: 100% 13px;
+  }
+
+  .menu-icon {
+    @apply flex md:hidden cursor-pointer w-7 flex-col justify-between items-stretch gap-1;
+  }
+
+  .menu-icon span {
+    @apply w-full h-px bg-gray-dark-400 rounded-sm transition-all duration-300;
   }
 
 }

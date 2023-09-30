@@ -27,6 +27,9 @@ module.exports = {
       gridTemplateRows: {
         'projects': '20px 228px 10px 228px 20px',
       },
+      spacing: {
+        'screen-view': 'calc(100vh - 80px)',
+      },
     },
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
