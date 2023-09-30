@@ -20,6 +20,7 @@ module.exports = {
       },
       fontSize: {
         'extra-small': '.65rem',
+        'device': '14px',
       },
       gridTemplateColumns: {
         'projects': '148px 10px 148px 10px 148px',

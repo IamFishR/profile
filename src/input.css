@@ -6,7 +6,7 @@
 
   html,
   body {
-    @apply text-sm xl:text-[15px] leading-6 font-sans antialiased dark:bg-gray-dark-900 dark:text-gray-dark-400 scroll-smooth overflow-x-hidden;
+    @apply text-device md:text-sm xl:text-[15px] leading-6 font-sans antialiased dark:bg-gray-dark-900 dark:text-gray-dark-400 scroll-smooth overflow-x-hidden;
   }
 
   .nav-item {
@@ -22,7 +22,7 @@
   }
 
   .layout {
-    @apply px-3 md:px-0;
+    @apply px-6 md:px-0;
   }
 
   .spacing-y {
@@ -73,10 +73,10 @@
     @apply px-10 md:px-4 py-2 dark:hover:bg-gray-dark-700 border border-gray-dark-500 dark:hover:text-gray-dark-200 hover:shadow-none;
   }
 
-  .divider.horizontal {
+  /* .divider.horizontal {
     @apply h-px my-14;
     background: linear-gradient(90deg, rgba(32, 43, 56, 0.44) 0%, rgba(42, 58, 78, 0.94) 49.97%, rgba(31, 44, 60, 0.48) 100%);
-  }
+  } */
 
   .divider.vertical {
     @apply mx-0 md:mx-2 my-8 md:my-0 w-full h-px md:h-full md:w-px bg-gradient-to-r md:bg-gradient-to-b from-gray-dark-900 via-gray-dark-500 to-gray-dark-900;
