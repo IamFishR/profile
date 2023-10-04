@@ -114,31 +114,61 @@
   }
 
   .projects>div:nth-child(1) {
-    @apply col-start-1 col-end-6 row-start-1 row-end-2;
+    @apply col-start-1 col-end-6 row-start-1 row-end-2 -ml-11 -mr-11;
   }
 
   .projects>div:nth-child(3) {
-    @apply col-start-2 col-end-3 row-start-1 row-end-5;
+    @apply col-start-2 col-end-3 row-start-1 row-end-5 -mt-11 -mb-11;
   }
 
   .projects>div:nth-child(5) {
-    @apply col-start-4 col-end-5 row-start-1 row-end-5;
+    @apply col-start-4 col-end-5 row-start-1 row-end-5 -mt-11 -mb-11;
   }
 
   .projects>div:nth-child(7) {
-    @apply col-start-1 col-end-6 row-start-3 row-end-4;
+    @apply col-start-1 col-end-6 row-start-3 row-end-4 -ml-11 -mr-11;
   }
 
   .projects>div:nth-child(11) {
-    @apply col-start-1 col-end-6 row-start-5 row-end-6;
+    @apply col-start-1 col-end-6 row-start-5 row-end-6 -ml-11 -mr-11;
   }
 
   .project-divider.horizontal {
-    @apply border-t border-b;
+    @apply relative;
+  }
+
+  .project-divider.horizontal::before,
+  .project-divider.horizontal::after {
+    @apply absolute left-0 right-0 w-full h-px bg-gradient-to-r from-gray-dark-900 via-gray-dark-400 to-gray-dark-900;
+    content: '';
+    background-size: 100% 13px;
+  }
+
+  .project-divider.horizontal::before {
+    @apply top-0;
+  }
+
+  .project-divider.horizontal::after {
+    @apply bottom-0;
   }
 
   .project-divider.vertical {
-    @apply border-l border-r;
+    @apply relative;
+  }
+
+  .project-divider.vertical::before,
+  .project-divider.vertical::after {
+    @apply absolute top-0 bottom-0 w-px bg-gradient-to-b from-gray-dark-900 via-gray-dark-400 to-gray-dark-900;
+    content: '';
+    background-size: 13px 100%;
+  }
+
+  .project-divider.vertical::before {
+    @apply left-0;
+  }
+
+  .project-divider.vertical::after {
+    @apply right-0;
   }
 
   .project-divider {
