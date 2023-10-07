@@ -194,4 +194,8 @@
     @apply w-full h-px bg-gray-dark-400 rounded-sm transition-all duration-300;
   }
 
+  .profile-pic {
+    @apply bg-[url('https://cdn.glitch.global/832d4b08-8dae-45c1-a70f-58914352e92f/34508469.jpg?v=1696492059656')] bg-center bg-cover;
+  }
+
 }

@@ -1110,6 +1110,12 @@ p {
   transition-duration: 300ms;
 }
 
+.profile-pic {
+  background-image: url('https://cdn.glitch.global/832d4b08-8dae-45c1-a70f-58914352e92f/34508469.jpg?v=1696492059656');
+  background-size: cover;
+  background-position: center;
+}
+
 .relative {
   position: relative;
 }
@@ -1293,6 +1299,10 @@ p {
   gap: 1rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
 }
@@ -1304,6 +1314,10 @@ p {
 .bg-gray-dark-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(27 31 34 / var(--tw-bg-opacity));
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .px-14 {

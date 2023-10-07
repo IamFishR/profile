@@ -30,7 +30,7 @@ module.exports = {
       },
       spacing: {
         'screen-view': 'calc(100vh - 80px)',
-      },
+      }
     },
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
