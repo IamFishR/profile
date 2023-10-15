@@ -6,7 +6,7 @@
 
   html,
   body {
-    @apply text-device md:text-sm xl:text-[15px] leading-6 font-sans antialiased dark:bg-gray-dark-900 dark:text-gray-dark-400 scroll-smooth overflow-x-hidden;
+    @apply text-device md:text-sm xl:text-[15px] leading-6 font-sans antialiased bg-gray-50 text-gray-800 dark:bg-gray-dark-900 dark:text-gray-dark-400 scroll-smooth overflow-x-hidden;
   }
 
   .nav-item {
@@ -34,7 +34,7 @@
   }
 
   .link {
-    @apply dark:text-gray-dark-400 dark:hover:text-gray-dark-100 dark:hover:underline-offset-1 duration-500;
+    @apply text-gray-700 dark:text-gray-dark-400 dark:hover:text-gray-dark-100 dark:hover:underline-offset-1 duration-500;
   }
 
   /* 2 column above 1024 & 1 column below */
@@ -66,11 +66,17 @@
   }
 
   .card {
-    @apply dark:bg-gray-dark-700 rounded-md shadow-md shadow-dark p-4 dark:text-gray-dark-400 transition-all duration-300;
+    @apply bg-slate-800 dark:bg-gray-dark-700 rounded-md shadow-md shadow-dark p-4 dark:text-gray-dark-400 transition-all duration-300;
+  }
+
+  .card p,
+  .card span,
+  .card a {
+    @apply text-gray-100 dark:text-gray-dark-400;
   }
 
   .card-btn {
-    @apply px-10 md:px-4 py-2 dark:hover:bg-gray-dark-700 border border-gray-dark-500 dark:hover:text-gray-dark-200 hover:shadow-none;
+    @apply px-10 md:px-4 py-2 dark:hover:bg-gray-dark-700 border text-gray-100 border-gray-dark-500 dark:hover:text-gray-dark-200 hover:shadow-none;
   }
 
   /* .divider.horizontal {
@@ -100,7 +106,7 @@
   }
 
   .timeline::before {
-    @apply absolute top-0 left-0 w-px h-full bg-gradient-to-b from-gray-dark-400 from-50% to-gray-dark-900 to-50% bg-repeat;
+    @apply absolute top-0 left-0 w-px h-full bg-gradient-to-b dark:from-gray-dark-400 from-gray-dark-600 from-50% to-white dark:to-gray-dark-900 to-50% bg-repeat;
     content: '';
     background-size: 100% 13px;
   }
